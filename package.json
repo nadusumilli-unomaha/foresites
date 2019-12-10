@@ -2,13 +2,33 @@
   "name": "foresites",
   "version": "0.0.1",
   "description": "The application to handle the foresites homepage",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
+    "build": "rm -rf dist && webpack --env.mode $npm_package_config_mode --env.presets $npm_package_config_presets",
+    "start": "npm run build && node ./dist/server.js",
     "test": "npm test"
+  },
+  "config":{
+    "mode": "development",
+    "presets": "babel,html"
   },
   "author": "Nikhit Adusumilli",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.0",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
   }
 }
