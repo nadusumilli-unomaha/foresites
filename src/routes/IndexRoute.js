@@ -1,4 +1,5 @@
 import {Router} from 'express';
+import path from 'path';
 
 const IndexRoute = Router(),
         SRC_DIR = path.resolve("./src/"),
