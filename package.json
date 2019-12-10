@@ -1,0 +1,14 @@
+{
+  "name": "foresites",
+  "version": "0.0.1",
+  "description": "The application to handle the foresites homepage",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Nikhit Adusumilli",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
