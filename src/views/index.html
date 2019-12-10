@@ -6,19 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Foresites</title>
     <style>
-        .red {
-            color: red;
-            padding: 10px;
-            background-color: black;
+        .navbar{
+            elist-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        .logo_img{
+            width: 50%;
+            height: 200px;
+        }
+        .tag_img {
+            width: 50%;
+            height: 100px;
+            float: right;
+            position: absolute;
         }
     </style>
 </head>
 <body>
-    <div class="red">Foresites under reconstruction.</div>
-    <div>Foresites under reconstruction.</div>
-    <div>Foresites under reconstruction.</div>
-    <div>Foresites under reconstruction.</div>
-    <div>Foresites under reconstruction.</div>
-    <div>Foresites under reconstruction.</div>
+    <div>
+        <div class="foresites_images">
+            <img class="logo_img" src="/static/images/foresites_logo.jpg"/>
+            <img class="tag_img" src="/static/images/foresites_tag.jpg"/>
+        </div>
+        <ul class="navbar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Home">About</a></li>
+            <li><a href="#Home">Media Assets</a></li>
+            <li><a href="#Home">Contact Us</a></li>
+        </ul>
+    </div>
 </body>
 </html>

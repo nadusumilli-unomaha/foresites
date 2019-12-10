@@ -10,7 +10,9 @@ const DIST_DIR = path.resolve("../dist"),
 const app = express();
 const port = 3000;
 
-app.use(express.static(DIST_DIR));
+console.log(path.resolve('./public'));
+
+app.use('/static',express.static(path.resolve('./public')));
 
 app.use('/', IndexRouter);
 
