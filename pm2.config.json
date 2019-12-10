@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "foresites",
+            "script": "npm",
+            "args" : "start"
+        }
+    ]
+}
